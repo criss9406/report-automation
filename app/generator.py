@@ -65,10 +65,10 @@ def creat_reporte(df: dataframe) -> str:
 
     #datos
     for idx, dato in enumerate(top10.iter_rows(named=True)):
-        tabla_top.rows[idx + 1].cells[0].text = dato["pais"]
-        tabla_top.rows[idx + 1].cells[1].text = f"{dato["poblacion_2024"]:,}"
-        tabla_top.rows[idx + 1].cells[2].text = f"{dato["cambio_porcentual"]:,}"
-        tabla_top.rows[idx + 1].cells[3].text = dato["continente"]
+        tabla_top.rows[idx + 1].cells[0].text = dato['pais']
+        tabla_top.rows[idx + 1].cells[1].text = f"{dato['poblacion_2024']:,}"
+        tabla_top.rows[idx + 1].cells[2].text = f"{dato['cambio_porcentual']:,}"
+        tabla_top.rows[idx + 1].cells[3].text = dato['continente']
 
     #guardar archivo
     fecha_archivo = datetime.now().strftime("%Y-%m-%d_%H-%M")
