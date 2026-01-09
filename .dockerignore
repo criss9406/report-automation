@@ -1,0 +1,36 @@
+# .dockerignore
+
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Outputs locales (Railway usará su propio volumen)
+outputs/
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Test files
+test.py
+app/test.py
