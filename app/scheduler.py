@@ -14,9 +14,9 @@ _scheduler_thread = None
 def ejecutar_pipeline():
 
     try:   
-        print(f"\n{"=" * 50}")
+        print(f"\n{'=' * 50}")
         print(f"🟢inicio de ejecución automática: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
-        print(f"\n{"=" * 50}")
+        print(f"\n{'=' * 50}")
 
         print("🟢extrayendo datos ...")
         datos_raw = extraer_tabla_completa()
@@ -35,9 +35,9 @@ def ejecutar_pipeline():
         ruta_reporte = creat_reporte(df_limpio)
         print(f"✅ reporte generado en: {ruta_reporte}")
 
-        print(f"\n{"=" * 50}")
+        print(f"\n{'=' * 50}")
         print(f"✅ proceso completado exitosamente")
-        print(f"\n{"=" * 50}")
+        print(f"\n{'=' * 50}")
 
     except Exception as e:
         print(f"\n ❌ Error en automatización: {str(e)}")
@@ -54,7 +54,7 @@ def iniciar_scheduler():
 
     print("🔴 scheduler detenido correctamente")
 
-def iniciar_scheduler_backgound():
+def iniciar_scheduler_background():
 
     global _scheduler_thread
 

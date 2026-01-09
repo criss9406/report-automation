@@ -6,12 +6,12 @@ from app.extractor import extraer_tabla_completa
 from app.processor import procesar_datos
 from app.generator import creat_reporte
 from contextlib import asynccontextmanager
-from app.scheduler import iniciar_scheduler_backgound
+from app.scheduler import iniciar_scheduler_background
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     #se ejecuta al iniciar fastAPI
-    iniciar_scheduler_backgound()
+    iniciar_scheduler_background()
     yield   #permanece en ejecución
 
     from app.scheduler import detener_scheduler
