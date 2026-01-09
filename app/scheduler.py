@@ -15,7 +15,7 @@ def ejecutar_pipeline():
 
     try:   
         print(f"\n{'=' * 50}")
-        print(f"🟢inicio de ejecución automática: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}")
+        print(f"🟢inicio de ejecución automática: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print(f"\n{'=' * 50}")
 
         print("🟢extrayendo datos ...")
