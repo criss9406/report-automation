@@ -18,13 +18,13 @@ def ejecutar_pipeline():
         print(f"🕐 Inicio de ejecución automática: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         print("=" * 50 + "\n")
         
-        from app.extractor import extraer_datos_poblacion
+        from app.extractor import extraer_tabla_completa
         from app.processor import procesar_datos
         from app.generator import crear_reporte
         
         # PASO 1: Extraer
         print("📥 Extrayendo datos...")
-        datos_raw = extraer_datos_poblacion()
+        datos_raw = extraer_tabla_completa()
         
         if not datos_raw:
             print("❌ Error: No se pudieron extraer datos")

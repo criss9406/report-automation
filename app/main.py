@@ -5,7 +5,7 @@ from fastapi.responses import FileResponse
 from contextlib import asynccontextmanager
 import os
 
-from app.extractor import extraer_datos_poblacion
+from app.extractor import extraer_tabla_completa
 from app.processor import procesar_datos
 from app.generator import crear_reporte
 from app.scheduler import (
@@ -89,7 +89,7 @@ def generar_reporte_completo():
     
     try:
         print("extrayendo datos ...")
-        datos_raw = extraer_datos_poblacion()
+        datos_raw = extraer_tabla_completa()
 
         if not datos_raw:
             return {"error": "no se pudieron extraer datos de la web"}
