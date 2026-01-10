@@ -5,7 +5,7 @@ import polars as pl
 from pathlib import Path
 from polars import dataframe
 
-def creat_reporte(df: dataframe) -> str:
+def crear_reporte(df: dataframe) -> str:
     
     #genera la carpeta outputs si no existe
     Path("outputs").mkdir(exist_ok=True)
