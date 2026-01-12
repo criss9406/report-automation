@@ -1,4 +1,4 @@
-# app/scheduler.py
+# scheduler.py
 
 import schedule
 import time

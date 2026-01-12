@@ -1,3 +1,5 @@
+#extractor.py
+
 from playwright.sync_api import sync_playwright
 
 def extraer_tabla_completa():
