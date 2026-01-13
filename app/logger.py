@@ -22,7 +22,7 @@ def configurar_logger(nombre_modulo:str) -> logging.Logger:
 
     #crear logger específico para el módulo
     logger = logging.getLogger(nombre_modulo)
-    logger.setLevel(logging.info)
+    logger.setLevel(logging.INFO)
 
     #evitar duplicar handlers si ya existe
     if logger.handlers:
