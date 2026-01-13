@@ -1,5 +1,5 @@
 #extractor.py
-from tkinter import NO
+
 from playwright.sync_api import sync_playwright
 from app import logger
 from app.logger import configurar_logger
