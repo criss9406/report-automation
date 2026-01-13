@@ -1,8 +1,8 @@
 import logging
-from logging import handlers
 import sys
 import json
 
+from logging import handlers
 from pathlib import Path
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
